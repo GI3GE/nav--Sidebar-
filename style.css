@@ -135,7 +135,7 @@ nav .search-box button{
 /*Positioning stuff*/
 background: var(--place-holder-color);
     position: relative;
-    right: 25px;
+    right: 95px;
 /*Box model stuff*/
     padding: 5px;
     padding-left: calc(5px + 6px);
@@ -203,8 +203,10 @@ nav ul .prof-ile{
     height: 14px;
     top: -10px;
     right: 10px;
+    background: var(--sidebar-color);
     border-top: 1.7px solid var(--primary-color);
     border-left: 1.7px solid var(--primary-color);
+    transform: rotate(45deg);
 }
 .user-prof li{
     padding: calc(20px - 20px);
@@ -457,6 +459,58 @@ a,li{
 .search-container{
     display: none;
 }
+main .content{
+    margin:min(10px , 500px);
+}
+main .head-title{
+    text-align: center;
+    margin: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+main .content .container .content-title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+main .container{
+    padding: min(25px , 50%);
+    border: 2px solid var(--primary-line);
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+main .container p{
+    width: 100%;
+    margin-right: 10px;
+}
+
+main .container .c-image{
+   
+    width: 25%;
+    height: 250px;
+    min-width: 300px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+main .container .c-image p {
+    text-align: center;
+    font-size: 12px;
+
+}
+main .c-image img{
+    width: 100%;
+    
+}
 
 
 
@@ -493,6 +547,8 @@ a,li{
         padding:20px 1px;
         margin: 20px;
         border-radius: 20px;
+        background:var(--sidebar-color);
+        backdrop-filter: blur(20px);
         border: 3px solid var(--primary-color);
        min-width: 90%;
         height: 50vh;
@@ -523,6 +579,47 @@ a,li{
         background: none;
         color: var(--text-color);
     }
-
-
+}
+@media(max-width:827px) {
+    main .content{
+        margin:min(10px , 500px);
+    }
+    main .head-title{
+        text-align: center;
+        margin: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--primary-color);
+    }
+    
+    main .container{
+        gap: 20px;
+        padding: min(25px , 50%);
+        border: 2px solid var(--primary-line);
+        border-radius: 30px;
+        margin: 10px;
+        font-size: 14px;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .container p{
+        width: 100%;
+    }
+    
+    main .container .c-image{
+       
+        width: 25%;
+        height: 250px;
+        min-width: 300px;
+    
+    }
+    main .c-image img{
+        width: 100%;
+        
+    }
+    
+    
 }
